@@ -1,4 +1,1 @@
-User-agent: *
-Disallow:
-
-Sitemap: yzhai.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://zhangh-w.github.io//sitemap.xml
