@@ -1,44 +1,15 @@
 ---
 layout: page
-permalink: /Teaching/
-title: Teaching
-description: No teaching mission 2021-2022.
+permalink: /teaching/
+title: teaching
+description: Course materials, schedules, and resources for classes taught.
 nav: true
-nav_order: 2
+nav_order: 6
+calendar: true
 ---
 
-#### Université d'Orléans (2017-2020)
-<table style="table-layout:fixed;">
-<tr>           
-  <td width="120">2019–2020</td>
-  <td width="20"> 48h</td>
-  <td width="15"> </td>
-  <td width="20"> L1</td>
-  <td width="15"> </td>
-  <td width="600">Calculus: Analyses et Algèbres élémentaires</td>
-</tr>
-<tr>           
-  <td width="120">2018–2019</td>
-  <td width="20"> 48h</td>
-  <td width="15"> </td>
-  <td width="20"> L1</td>
-  <td width="15"> </td>
-  <td width="600">Calculus: Analyses et Algèbres élémentaires</td>
-</tr>
-<tr>           
-  <td width="120"> </td>
-  <td width="20"> 16h</td>
-  <td width="15"> </td>
-  <td width="20"> A3</td>
-  <td width="15"> </td>
-  <td width="600">Soutien Polytech: Transformation de Laplace</td>
-</tr>
-<tr>           
-  <td width="120">2017–2018</td>
-  <td width="20"> 64h</td>
-  <td width="15"> </td>
-  <td width="20"> L1</td>
-  <td width="15"> </td>
-  <td width="600">Cours+TD: Suites et fonctions réelles</td>
-</tr>
-</table>
+This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+
+{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+
+{% include courses.liquid %}
