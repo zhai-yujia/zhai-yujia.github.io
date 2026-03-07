@@ -6,12 +6,12 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{v.$white-color};
+  --global-bg-color: #{v.$grey-color-custom};
   --global-code-bg-color: #{v.$code-bg-color-light};
   --global-text-color: #{v.$black-color};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #{v.$pink-color-light};
-  --global-hover-color: #{v.$pink-color-light};
+  --global-theme-color: #{v.$purple-color-custom};
+  --global-hover-color: #{v.$purple-color-custom};
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-dark};
   --global-footer-text-color: #{v.$grey-color-light};
