@@ -2,21 +2,21 @@
   font-family: "CM Web";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/fonts/KaTeX_Main-Regular.woff2") format("woff2");
+  src: url("assets/fonts/KaTeX_Main-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "CM Web";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/fonts/KaTeX_Main-Italic.woff2") format("woff2");
+  src: url("assets/fonts/KaTeX_Main-Italic.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "CM Web";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/fonts/KaTeX_Main-Bold.woff2") format("woff2");
+  src: url("assets/fonts/KaTeX_Main-Bold.woff2") format("woff2");
 }
 
 :root {
