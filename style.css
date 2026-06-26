@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "CM Web";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/fonts/KaTeX_Main-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "CM Web";
+  font-style: italic;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/fonts/KaTeX_Main-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "CM Web";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/fonts/KaTeX_Main-Bold.woff2") format("woff2");
+}
+
 :root {
   --paper: #f3e8e5;
   --paper-soft: #f8f1ee;
@@ -5,6 +26,7 @@
   --muted: #80736f;
   --accent: #b98f88;
   --line: rgba(65, 58, 56, 0.2);
+  --font-main: "CM Web", "Latin Modern Roman", "Computer Modern Serif", "CMU Serif", Georgia, "Times New Roman", serif;
 }
 
 * { box-sizing: border-box; }
@@ -13,7 +35,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-main);
   font-size: 16px;
   line-height: 1.55;
 }
@@ -34,7 +56,7 @@ h1, h2, h3, p { margin-top: 0; }
   gap: 34px;
   margin: 0 auto;
   padding: 18px 34px;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 11px;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -60,14 +82,14 @@ main, .page-note { max-width: 1120px; margin: 0 auto; }
 }
 .hero h1 {
   margin: 0;
-  font-size: clamp(60px, 8vw, 104px);
+  font-size: clamp(52px, 7vw, 88px);
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 0.92;
 }
 .hero-name span {
   color: var(--muted);
-  font-family: "Songti SC", serif;
+  font-family: var(--font-main);
   font-size: 19px;
   letter-spacing: 0.12em;
 }
@@ -81,7 +103,7 @@ main, .page-note { max-width: 1120px; margin: 0 auto; }
 }
 .hero-email, .hero-links {
   margin-bottom: 7px;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 15px;
 }
 .hero-journey {
@@ -98,8 +120,8 @@ main, .page-note { max-width: 1120px; margin: 0 auto; }
   border-top: 1px solid var(--line);
 }
 .section-heading h2 {
-  margin-bottom: 70px;
-  font-size: clamp(48px, 7vw, 78px);
+  margin-bottom: 54px;
+  font-size: clamp(38px, 5.2vw, 58px);
   font-weight: 400;
   letter-spacing: -0.05em;
   line-height: 1;
@@ -107,7 +129,7 @@ main, .page-note { max-width: 1120px; margin: 0 auto; }
 .group-title {
   margin-bottom: 24px;
   color: var(--muted);
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -123,7 +145,7 @@ main, .page-note { max-width: 1120px; margin: 0 auto; }
 }
 .timeline dt {
   color: var(--muted);
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 11px;
   letter-spacing: 0.04em;
 }
@@ -140,6 +162,14 @@ main, .page-note { max-width: 1120px; margin: 0 auto; }
   margin: 0;
   padding-left: 20px;
   font-size: 21px;
+}
+.interest-list ul {
+  display: grid;
+  gap: 3px;
+  margin: 6px 0 0;
+  padding-left: 24px;
+  color: var(--muted);
+  font-size: 18px;
 }
 .pub-list {
   margin: 0;
@@ -159,14 +189,14 @@ main, .page-note { max-width: 1120px; margin: 0 auto; }
 .pub-list li::before {
   color: var(--muted);
   content: counter(pub-item) ".";
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 11px;
   line-height: 1.9;
 }
 .pub-year {
   display: none;
   color: var(--muted);
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.07em;
@@ -204,7 +234,7 @@ main, .page-note { max-width: 1120px; margin: 0 auto; }
   display: block;
   width: 16px;
   height: 16px;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 10px;
   line-height: 1;
 }
@@ -240,7 +270,7 @@ main, .page-note { max-width: 1120px; margin: 0 auto; }
 }
 .organizing-list time {
   color: var(--muted);
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 11px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -249,7 +279,7 @@ main, .page-note { max-width: 1120px; margin: 0 auto; }
   padding: 30px 34px 55px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 10px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
